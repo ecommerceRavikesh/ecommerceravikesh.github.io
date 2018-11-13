@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import PropTypes from "prop-types";
 import Flex from "grid-styled/dist/Flex";
 import { HeadContainer } from "./Header.style";
 
@@ -15,14 +14,5 @@ const Header = (props) => (
         </HeadContainer>
     </Fragment>
 );
-
-
-Header.propTypes = {
-    children: PropTypes.node.isRequired
-};
-
-Header.defaultProps = {
-    children: () => (<div></div>)
-};
 
 export default Header;
