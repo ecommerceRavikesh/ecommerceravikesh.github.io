@@ -1,6 +1,6 @@
 # compromises Made
 
-1. Could not complete the assignment in 6hrs around.
+1. Could not complete the assignment in 6hrs around.(Lots of time goes in installing and understanding the application to build)
 2. Could have written unit tests for components
 3. Used added libraries just to show my understanding around these.
 4. Would be able to do better if more time in hand.
