@@ -10,7 +10,6 @@ import {
 } from "./Product.style";
 
 const Product = props => {
-  console.log("PPPPPPPPP", props);
   const { product } = props;
   const image = `/media/${product.image}`;
 
