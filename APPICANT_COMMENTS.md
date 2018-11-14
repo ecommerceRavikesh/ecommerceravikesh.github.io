@@ -5,3 +5,4 @@
 3. Used added libraries just to show my understanding around these.
 4. Would be able to do better if more time in hand.
 5. application is not responsive
+6. State management using Normalizer and performance considerations not taken to optimum.
