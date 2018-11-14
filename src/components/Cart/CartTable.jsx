@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import {
   requestAddToCart,
@@ -6,13 +6,18 @@ import {
   requestDecrement
 } from "../../redux/modules/product.module";
 import { cartAndCountSelector } from "../../redux/selectors/cart.selector";
-import { Flex, Box } from "grid-styled";
+import { Flex } from "grid-styled";
 import { formatPrice } from "../../utils/utilFunctions";
-import { TableContainer, RowContainer, SummaryStyle, ContinueButton, StyledButton, SyledLink } from "./Cart.style";
-import { Cart } from "./Cart.style";
+import {
+  TableContainer,
+  RowContainer,
+  SummaryStyle,
+  ContinueButton,
+  StyledButton,
+  SyledLink
+} from "./Cart.style";
 import TableHead from "./TableHead";
 import TableRow from "./TableRow";
-import { CloseButton } from "../../utils/sharedStyled";
 
 const CartTable = props => {
   const { cart } = props;
@@ -58,8 +63,16 @@ const CartTable = props => {
       ) : null}
       <RowContainer />
       <Flex m={"20px"} justifyContent={"space-between"}>
-      <SyledLink to={"/"}> <ContinueButton>CONTINUE SHOPPING</ContinueButton></SyledLink>
-      <StyledButton>checkout {cart.cartItems.length? <span> ({formatPrice(cart.grandTotal)})</span>:null}</StyledButton>
+        <SyledLink to={"/"}>
+          {" "}
+          <ContinueButton>CONTINUE SHOPPING</ContinueButton>
+        </SyledLink>
+        <StyledButton>
+          checkout{" "}
+          {cart.cartItems.length ? (
+            <span> ({formatPrice(cart.grandTotal)})</span>
+          ) : null}
+        </StyledButton>
       </Flex>
     </TableContainer>
   );

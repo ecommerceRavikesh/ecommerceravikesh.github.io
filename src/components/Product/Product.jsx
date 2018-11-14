@@ -1,11 +1,44 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { connect } from "react-redux";
 import Flex from "grid-styled/dist/Flex";
-//import {  } from "./Product.style";
+import {
+  ProductContainer,
+  ImageContainer,
+  Brand,
+  Title,
+  Description
+} from "./Product.style";
 
-const Product = (props) => (
-    <Fragment>
+const Product = props => {
+  console.log("PPPPPPPPP", props);
+  const { product } = props;
+  const image = `/media/${product.image}`;
 
-    </Fragment>
-);
+  return (
+    <ProductContainer flex={1} justifyContent={"center"} pt={"80px"}>
+      <ImageContainer img={image} />
+      <Flex flexDirection={"column"} m={"20px"} width={"300px"}>
+        <Brand flex={1} justifyContent={"center"}>
+          {product.brand}
+        </Brand>
+        <Title flex={1} justifyContent={"center"}>
+          {product.title}
+        </Title>
+        <Description flex={1} justifyContent={"center"}>
+          {product.description}
+        </Description>
+      </Flex>
+    </ProductContainer>
+  );
+};
 
-export default Product;
+export default connect(
+  (state, ownProps) => {
+    return {
+      product: state.products.prods.filter(
+        item => item.title === ownProps.match.params.productTitle
+      )[0]
+    };
+  },
+  {}
+)(Product);

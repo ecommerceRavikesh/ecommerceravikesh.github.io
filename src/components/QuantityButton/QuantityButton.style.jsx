@@ -6,18 +6,18 @@ export const QuantityContainer = styled(Flex)`
   height: 65px;
 `;
 
-export const ValueContainer =  styled(Flex)`
-width: 45px;
-height: 55px;
-background-color: #eee;
-color: #888;
+export const ValueContainer = styled(Flex)`
+  width: 45px;
+  height: 55px;
+  background-color: #eee;
+  color: #888;
 `;
-export const ButtonContainer =  styled(Flex)`
-width: 25px;
-height: 25px;
-background-color: #eee;
-color: #888;
-justify-content:center;
-align-items:center;
-cursor:pointer;
+export const ButtonContainer = styled(Flex)`
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  color: #888;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 `;
