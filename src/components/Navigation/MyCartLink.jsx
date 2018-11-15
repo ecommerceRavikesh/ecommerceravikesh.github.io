@@ -20,8 +20,8 @@ class MyCartLink extends Component {
   };
 
   togglePopup = () => {
-    this.setState(() => {
-      return { isPopup: !this.state.isPopup };
+    this.setState((prevState) => {
+      return { isPopup: !this.prevState.isPopup };
     });
   };
 
