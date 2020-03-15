@@ -36,7 +36,7 @@ class Home extends Component {
           >
             <MainText>Plates</MainText>
             <FootText>
-            Handmade ceramics encourage a more thoughtful presentation. Hastily made food just doesn’t jibe with a one-of-a-kind plate. Having items that are really handmade bring unique beauty and chanracter to food.
+            Handmade ceramics encourage a more thoughtful presentation. Hastily made food just doesn’t jibe with a one-of-a-kind plate. Having items that are really handmade bring unique beauty and character to the food served.
 
             </FootText>
           </TextContainer>
