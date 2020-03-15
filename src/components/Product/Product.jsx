@@ -6,7 +6,9 @@ import {
   ImageContainer,
   Brand,
   Title,
-  Description
+  Description,
+  BackButton,
+  SyledLink
 } from "./Product.style";
 
 const Product = props => {
@@ -23,8 +25,11 @@ const Product = props => {
         <Title flex={1} justifyContent={"center"}>
           {product.title}
         </Title>
-        <Description flex={1} justifyContent={"center"}>
+        <Description flexDirection={"column"} flex={1} justifyContent={"center"}>
           {product.description}
+          <SyledLink to="/">
+            <BackButton>Back to Home</BackButton>
+          </SyledLink>
         </Description>
       </Flex>
     </ProductContainer>

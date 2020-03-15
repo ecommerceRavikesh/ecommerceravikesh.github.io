@@ -1,5 +1,26 @@
 import Flex from "grid-styled/dist/Flex";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+export const SyledLink = styled(Link)`
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+`;
+
+export const BackButton = styled.button`
+  border: 1px solid black;
+  width: 96%;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+`;
 
 export const ProductContainer = styled(Flex)``;
 
