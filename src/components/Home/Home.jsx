@@ -36,9 +36,8 @@ class Home extends Component {
           >
             <MainText>Plates</MainText>
             <FootText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at purus pulvinar, placerate turpis ac. In egat massa sed enim
-              henderrit auctor a eget arcu. Curabitur ac pharetra nisl sit.
+            Handmade ceramics encourage a more thoughtful presentation. Hastily made food just doesn’t jibe with a one-of-a-kind plate. Having items that are really handmade bring unique beauty and chanracter to food.
+
             </FootText>
           </TextContainer>
         </HomeContainer>
